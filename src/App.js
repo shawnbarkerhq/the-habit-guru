@@ -6,6 +6,7 @@ import './App.css';
 import Navbar from './components/nav/Navbar';
 import Home from './components/layout/Home';
 import Dashboard from './components/layout/Dashboard';
+import Posts from './components/layout/Posts';
 
 class App extends Component {
   render() {
@@ -14,8 +15,9 @@ class App extends Component {
         <div className="root">
           <Navbar />
           <Switch>
-            <Route path="/" component={Home} />
-            <Route path="/dashboard" component={Dashboard} />
+            <Route path="/" exact component={Home} />
+            <Route path="/dashboard" exact component={Dashboard} />
+            <Route path="/posts" exact component={Posts} />
           </Switch>
         </div>
       </Router>
