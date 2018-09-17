@@ -34,7 +34,7 @@ class Navbar extends Component {
             </li>
             <li>
               <NavLink
-                to="/all-blogs"
+                to="/posts"
                 className="thg-blue"
                 activeClassName="active"
               >

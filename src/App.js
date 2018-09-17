@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import './App.css';
+
 import Navbar from './components/nav/Navbar';
+import Home from './components/layout/Home';
+import Dashboard from './components/layout/Dashboard';
 
 class App extends Component {
   render() {
@@ -9,7 +13,10 @@ class App extends Component {
       <Router>
         <div className="root">
           <Navbar />
-          <h1>Title</h1>
+          <Switch>
+            <Route path="/" component={Home} />
+            <Route path="/dashboard" component={Dashboard} />
+          </Switch>
         </div>
       </Router>
     );
