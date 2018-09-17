@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 class Navbar extends Component {
   render() {
     return (
       <nav className="navbar white navbar-center" id="navbar-center">
         <div className="nav-wrapper">
-          <a
+          <NavLink
             to="/"
             className="brand-logo thg-title-font thg-blue"
             activeClassName="active"
@@ -13,47 +14,51 @@ class Navbar extends Component {
             The
             <span className="thg-red">Habit</span>
             <span className="thg-thin-font">Guru</span>
-          </a>
-          <a
+          </NavLink>
+          <NavLink
             to="/"
             data-target="slide-out"
             className="sidenav-trigger black-text"
           >
             <i className="material-icons">menu</i>
-          </a>
+          </NavLink>
           <ul className="hide-on-med-and-down">
             <li>
-              <a
+              <NavLink
                 to={{ pathname: '/', hash: '#about' }}
                 className="thg-blue"
                 activeClassName="active"
               >
                 About
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a to="/all-blogs" className="thg-blue" activeClassName="active">
+              <NavLink
+                to="/all-blogs"
+                className="thg-blue"
+                activeClassName="active"
+              >
                 Blog
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
+              <NavLink
                 to={{ pathname: '/gallery' }}
                 className="thg-blue"
                 activeClassName="active"
               >
                 Gallery
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
+              <NavLink
                 hash={{ pathname: '/', hash: '#contact' }}
                 to="/"
                 className="thg-blue"
                 activeClassName="active"
               >
                 Contact
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
