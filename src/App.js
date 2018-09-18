@@ -28,7 +28,7 @@ class App extends Component {
             <Navbar />
             <Sidenav />
             <Switch>
-              <Route path="/" exact component={UserIsNotAuthenticated(Home)} />
+              <Route path="/" exact component={Home} />
               <Route
                 path="/dashboard"
                 exact
