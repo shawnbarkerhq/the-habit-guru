@@ -8,7 +8,8 @@ import './App.css';
 import Navbar from './components/nav/Navbar';
 import Home from './components/layout/Home';
 import Dashboard from './components/layout/Dashboard';
-import Posts from './components/layout/Posts';
+import Posts from './components/posts/Posts';
+import AddPost from './components/posts/AddPost';
 
 class App extends Component {
   render() {
@@ -21,6 +22,8 @@ class App extends Component {
               <Route path="/" exact component={Home} />
               <Route path="/dashboard" exact component={Dashboard} />
               <Route path="/posts" exact component={Posts} />
+              <Route path="/posts" exact component={Posts} />
+              <Route path="/posts/add" exact component={AddPost} />
             </Switch>
           </div>
         </Router>
