@@ -28,12 +28,15 @@ class PostDetail extends Component {
                 </Link>
               </div>
               <div className="col s6">
-                <Link to="" className="waves-effect waves-light btn">
+                <Link
+                  to={`/posts/edit/${post.id}`}
+                  className="waves-effect waves-light btn"
+                >
                   <i class="fas fa-edit left" />
                   Edit
                 </Link>
                 <Link
-                  to=""
+                  to="/posts"
                   className="waves-effect waves-light btn"
                   onClick={this.onDeleteClick}
                 >
