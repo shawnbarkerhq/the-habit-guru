@@ -21,12 +21,12 @@ class Posts extends Component {
           <div className="container">
             {posts.map(post => (
               <div className="row" key={post.id}>
-                <div className="col s12 m7">
-                  <h2 className="header">{post.title}</h2>
+                <div className="col s12 m6 offset-m3">
+                  <h2 className="header center-align">{post.title}</h2>
                   <div className="card horizontal">
                     <div className="card-image">
                       <img
-                        src="https://lorempixel.com/100/190/nature/6"
+                        src="https://via.placeholder.com/350x150"
                         alt="Default"
                       />
                     </div>

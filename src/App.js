@@ -12,6 +12,7 @@ import Posts from './components/posts/Posts';
 import AddPost from './components/posts/AddPost';
 import EditPost from './components/posts/EditPost';
 import PostDetail from './components/posts/PostDetail';
+import Login from './components/auth/Login';
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
               <Route path="/posts/add" exact component={AddPost} />
               <Route path="/posts/edit/:id" exact component={EditPost} />
               <Route path="/posts/:id" exact component={PostDetail} />
+              <Route path="/login" exact component={Login} />
             </Switch>
           </div>
         </Router>

@@ -1,8 +1,32 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-
+import { compose } from 'redux';
+import { connect } from 'react-redux';
+import { firebaseConnect } from 'react-redux-firebase';
+import PropTypes from 'prop-types';
 class Navbar extends Component {
+  state = {
+    isAuthenticated: false
+  };
+
+  static getDerivedStateFromProps(props, state) {
+    const { auth } = props;
+
+    if (auth.uid) {
+      return { isAuthenticated: true };
+    } else {
+      return { isAuthenticated: false };
+    }
+  }
+  onLogoutClick = e => {
+    e.preventDefault();
+
+    const { firebase } = this.props;
+    firebase.logout();
+  };
   render() {
+    const { isAuthenticated } = this.state;
+    const { auth } = this.props;
     return (
       <nav className="navbar white navbar-center" id="navbar-center">
         <div className="nav-wrapper">
@@ -51,15 +75,33 @@ class Navbar extends Component {
               </NavLink>
             </li>
             <li>
-              <NavLink
-                hash={{ pathname: '/', hash: '#contact' }}
-                to="/"
-                className="thg-blue"
-                activeClassName="active"
-              >
+              <NavLink to="/" className="thg-blue" activeClassName="active">
                 Contact
               </NavLink>
             </li>
+            {isAuthenticated ? (
+              <div className="nav-wrapper">
+                <li>
+                  <NavLink
+                    to="/dashboard"
+                    className="thg-blue"
+                    activeClassName="active"
+                  >
+                    {auth.email}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/dashboard"
+                    className="thg-blue"
+                    activeClassName="active"
+                    onClick={this.onLogoutClick}
+                  >
+                    Logout
+                  </NavLink>
+                </li>
+              </div>
+            ) : null}
           </ul>
         </div>
       </nav>
@@ -67,4 +109,14 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+Navbar.propTypes = {
+  firebase: PropTypes.object.isRequired,
+  auth: PropTypes.object.isRequired
+};
+
+export default compose(
+  firebaseConnect(),
+  connect((state, props) => ({
+    auth: state.firebase.auth
+  }))
+)(Navbar);
