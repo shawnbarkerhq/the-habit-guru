@@ -10,6 +10,7 @@ import Home from './components/layout/Home';
 import Dashboard from './components/layout/Dashboard';
 import Posts from './components/posts/Posts';
 import AddPost from './components/posts/AddPost';
+import PostDetail from './components/posts/PostDetail';
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
               <Route path="/posts" exact component={Posts} />
               <Route path="/posts" exact component={Posts} />
               <Route path="/posts/add" exact component={AddPost} />
+              <Route path="/posts/:id" exact component={PostDetail} />
             </Switch>
           </div>
         </Router>

@@ -38,9 +38,9 @@ class AddPost extends Component {
                 Back to posts
               </Link>
 
-              <div class="card">
-                <div class="card-content">
-                  <span class="card-title">Add Post</span>
+              <div className="card">
+                <div className="card-content">
+                  <span className="card-title">Add Post</span>
                   <form className="s12" onSubmit={this.onSubmit}>
                     <div className="row">
                       <i className="prefix fas fa-heading" />
@@ -68,8 +68,8 @@ class AddPost extends Component {
                       />
                       <label htmlFor="description">Description</label>
                     </div>
-                    <div class="row">
-                      <div class="input-field col s12">
+                    <div className="row">
+                      <div className="input-field col s12">
                         <i
                           className="prefix fas fa-keyboard
                         "

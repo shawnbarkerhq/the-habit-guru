@@ -20,7 +20,7 @@ class Navbar extends Component {
             data-target="slide-out"
             className="sidenav-trigger black-text"
           >
-            <i class="fas fa-bars" />
+            <i className="fas fa-bars" />
           </NavLink>
           <ul className="hide-on-med-and-down">
             <li>
