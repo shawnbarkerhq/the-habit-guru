@@ -3,6 +3,7 @@ import React from 'react';
 import Slider from '../ui/slider/Slider';
 import NewsletterSignUp from '../ui/newsletter/Newsletter';
 import Learn from '../ui/learn/Learn';
+import BlogSlider from '../ui/blog-slider/BlogSlider';
 import Contact from '../ui/contact/Contact';
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
       <Slider />
       <NewsletterSignUp />
       <Learn />
+      <BlogSlider />
       <Contact />
     </div>
   );

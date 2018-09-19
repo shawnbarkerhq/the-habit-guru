@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import FooterBottom from './FooterBottom';
 
@@ -22,22 +23,22 @@ class Footer extends Component {
               <h5 className="thg-red">Links</h5>
               <ul>
                 <li>
-                  <a className="grey-text text-lighten-3" href="#!">
+                  <Link className="grey-text text-lighten-3" to="/about">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="grey-text text-lighten-3" href="#!">
+                  <Link className="grey-text text-lighten-3" to="/posts">
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="grey-text text-lighten-3" href="#!">
+                  <Link className="grey-text text-lighten-3" to="/gallery">
                     Gallery
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="grey-text text-lighten-3" href="#!">
+                  <a className="grey-text text-lighten-3" to="/contact">
                     Contact
                   </a>
                 </li>

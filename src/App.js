@@ -50,11 +50,7 @@ class App extends Component {
                 exact
                 component={UserIsAuthenticated(EditPost)}
               />
-              <Route
-                path="/posts/:id"
-                exact
-                component={UserIsNotAuthenticated(PostDetail)}
-              />
+              <Route path="/posts/:id" exact component={PostDetail} />
               <Route
                 path="/login"
                 exact

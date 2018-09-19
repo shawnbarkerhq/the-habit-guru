@@ -1,9 +1,31 @@
 import React, { Component } from 'react';
-
+import { firestoreConnect } from 'react-redux-firebase';
+import PropTypes from 'prop-types';
 class Contact extends Component {
-  componentDidMount = () => {
-    var elems = document.querySelectorAll('.scrollspy');
-    var instances = window.M.ScrollSpy.init(elems);
+  state = {
+    name: '',
+    email: '',
+    phone: '',
+    description: ''
+  };
+
+  onChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  onSubmit = e => {
+    e.preventDefault();
+
+    const newContact = this.state;
+
+    const { firestore } = this.props;
+
+    firestore
+      .add({ collection: 'contacts' }, newContact)
+      .then(() =>
+        this.setState({ name: '', email: '', phone: '', message: '' })
+      )
+      .catch(err => console.log(err));
   };
 
   render() {
@@ -20,20 +42,43 @@ class Contact extends Component {
                   <span className="thg-red">Contact</span>
                   <span className="thg-thin-font">Us</span>
                 </h4>
-                <form>
-                  <input id="name" type="text" name="name" placeholder="name" />
-                  <input id="email" type="email" name="email" />
+                <form onSubmit={this.onSubmit}>
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder="name"
+                    autocomplete="name"
+                    required
+                    onChange={this.onChange}
+                    value={this.state.name}
+                  />
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    onChange={this.onChange}
+                    value={this.state.email}
+                  />
                   <input
                     id="phone"
                     type="text"
                     name="phone"
                     placeholder="phone"
+                    autocomplete="tel"
+                    onChange={this.onChange}
+                    value={this.state.phone}
                   />
                   <input
                     placeholder="Message"
                     name="message"
                     label="message"
                     info="Please leave a message"
+                    required
+                    onChange={this.onChange}
+                    value={this.state.message}
                   />
                   <input
                     type="submit"
@@ -50,4 +95,8 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+Contact.propTypes = {
+  firestore: PropTypes.object.isRequired
+};
+
+export default firestoreConnect()(Contact);
