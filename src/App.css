@@ -37,6 +37,10 @@ nav.navbar-center ul li a:active {
   background-color: #36475e !important;
 }
 
+.slider-blog .indicators .indicator-item.active {
+  background-color: #36475e !important;
+}
+
 .card-blog {
   height: 100%;
 }
@@ -47,6 +51,10 @@ nav.navbar-center ul li a:active {
 
 .slider .card-image {
   height: 330px;
+}
+
+.slider-blog .card-image {
+  height: 400px;
 }
 
 .thg-title-font {
@@ -225,6 +233,15 @@ blockquote {
   border-left: 5px solid #d43d33;
   font-style: italic;
   font-weight: bold;
+  color: black;
+  font-size: 2rem;
+}
+
+.quote {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 hr {

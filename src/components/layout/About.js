@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import cartoonMe from '../img/prayer-pose.png';
+import cartoonMe from '../../assets/images/prayer-pose.png';
 
 class About extends Component {
   render() {

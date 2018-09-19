@@ -31,12 +31,12 @@ class BlogSlider extends Component {
             <span className="thg-red">Blog</span>
             <span className="thg-thin-font">Gallery</span>
           </h4>
-          <div class="slider slider-blog">
-            <ul class="slides">
+          <div className="slider-blog">
+            <ul className="slides">
               <li>
                 <div className="row">
                   {posts.map(post => (
-                    <div className="col s12 l4">
+                    <div className="col s12 l4" key={post.id}>
                       <Link to={`/posts/${post.id}`}>
                         <div className="card card-blog hoverable">
                           <div className="card-image bslide">

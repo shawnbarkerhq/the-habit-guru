@@ -32,7 +32,7 @@ class PostDetail extends Component {
                   to={`/posts/edit/${post.id}`}
                   className="waves-effect waves-light btn"
                 >
-                  <i class="fas fa-edit left" />
+                  <i className="fas fa-edit left" />
                   Edit
                 </Link>
                 <Link
@@ -40,7 +40,7 @@ class PostDetail extends Component {
                   className="waves-effect waves-light btn"
                   onClick={this.onDeleteClick}
                 >
-                  <i class="fas fa-trash left" />
+                  <i className="fas fa-trash left" />
                   Delete
                 </Link>
               </div>

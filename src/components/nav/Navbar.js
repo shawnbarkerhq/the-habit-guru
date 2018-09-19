@@ -51,7 +51,11 @@ class Navbar extends Component {
           </NavLink>
           <ul className="hide-on-med-and-down">
             <li>
-              <NavLink to="/" className="thg-blue" activeClassName="active">
+              <NavLink
+                to="/about"
+                className="thg-blue"
+                activeClassName="active"
+              >
                 About
               </NavLink>
             </li>
@@ -85,6 +89,15 @@ class Navbar extends Component {
             </li>
             {isAuthenticated ? (
               <div className="nav-wrapper">
+                <li>
+                  <NavLink
+                    to="/quotes"
+                    className="thg-blue"
+                    activeClassName="active"
+                  >
+                    Quotes
+                  </NavLink>
+                </li>
                 <li>
                   <NavLink
                     to="/dashboard"

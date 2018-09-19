@@ -48,7 +48,7 @@ class Contact extends Component {
                     type="text"
                     name="name"
                     placeholder="name"
-                    autocomplete="name"
+                    autoComplete="name"
                     required
                     onChange={this.onChange}
                     value={this.state.name}
@@ -57,7 +57,8 @@ class Contact extends Component {
                     id="email"
                     type="email"
                     name="email"
-                    autocomplete="email"
+                    placeholder="email"
+                    autoComplete="email"
                     required
                     onChange={this.onChange}
                     value={this.state.email}
@@ -67,7 +68,7 @@ class Contact extends Component {
                     type="text"
                     name="phone"
                     placeholder="phone"
-                    autocomplete="tel"
+                    autoComplete="tel"
                     onChange={this.onChange}
                     value={this.state.phone}
                   />
