@@ -18,6 +18,7 @@ import AddPost from './components/posts/AddPost';
 import EditPost from './components/posts/EditPost';
 import PostDetail from './components/posts/PostDetail';
 import Login from './components/auth/Login';
+import Footer from './components/layout/Footer';
 
 class App extends Component {
   render() {
@@ -60,6 +61,7 @@ class App extends Component {
                 component={UserIsNotAuthenticated(Login)}
               />
             </Switch>
+            <Footer />
           </div>
         </Router>
       </Provider>

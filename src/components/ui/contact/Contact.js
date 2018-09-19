@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 
 class Contact extends Component {
+  componentDidMount = () => {
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = window.M.ScrollSpy.init(elems);
+  };
+
   render() {
     return (
       <section

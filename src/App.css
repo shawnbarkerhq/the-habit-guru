@@ -176,7 +176,7 @@ nav.navbar-center ul li a:active {
 
 .section-contact {
   position: relative;
-  /* background: url(./img/resort1.jpg); */
+  background: url(./assets/images/resort1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -203,7 +203,7 @@ nav.navbar-center ul li a:active {
 
 .learn-card {
   position: relative;
-  /* background: url(./img/asia-balinese-belief.jpg); */
+  background: url(./assets/images/asia-balinese-belief.jpg);
   background-size: cover;
   background-position: center;
   padding: 90px;
@@ -212,7 +212,7 @@ nav.navbar-center ul li a:active {
 
 .learn-card2 {
   position: relative;
-  /* background: url(./img/resort2.jpg); */
+  background: url(./assets/images/resort2.jpg);
   background-size: cover;
   background-position: center;
   padding: 90px;

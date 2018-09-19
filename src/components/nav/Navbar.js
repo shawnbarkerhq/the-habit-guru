@@ -18,6 +18,9 @@ class Navbar extends Component {
       return { isAuthenticated: false };
     }
   }
+  onClickScroll = e => {
+    document.getElementById('contact').scrollIntoView();
+  };
   onLogoutClick = e => {
     e.preventDefault();
 
@@ -48,11 +51,7 @@ class Navbar extends Component {
           </NavLink>
           <ul className="hide-on-med-and-down">
             <li>
-              <NavLink
-                to={{ pathname: '/', hash: '#about' }}
-                className="thg-blue"
-                activeClassName="active"
-              >
+              <NavLink to="/" className="thg-blue" activeClassName="active">
                 About
               </NavLink>
             </li>
@@ -67,7 +66,7 @@ class Navbar extends Component {
             </li>
             <li>
               <NavLink
-                to={{ pathname: '/gallery' }}
+                to="/gallery"
                 className="thg-blue"
                 activeClassName="active"
               >
@@ -75,7 +74,12 @@ class Navbar extends Component {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/" className="thg-blue" activeClassName="active">
+              <NavLink
+                to="/"
+                className="thg-blue"
+                activeClassName="active"
+                onClick={this.onClickScroll}
+              >
                 Contact
               </NavLink>
             </li>

@@ -10,8 +10,8 @@ class Learn extends Component {
               <h4>How I can help you</h4>
               <p>My goal is to help you</p>
               <a className="waves-effect waves-light btn thg-blue-bg">
-                <i className="material-icons left">cloud</i>
-                button
+                <i className="fas fa-cloud left" />
+                Learn More
               </a>
             </div>
           </div>
@@ -20,8 +20,8 @@ class Learn extends Component {
               <h4>Habits 101</h4>
               <p>Understanding your habits</p>
               <a className="waves-effect waves-light btn thg-blue-bg">
-                <i className="material-icons left">cloud</i>
-                button
+                <i className="fas fa-cloud left" />
+                Learn More
               </a>
             </div>
           </div>

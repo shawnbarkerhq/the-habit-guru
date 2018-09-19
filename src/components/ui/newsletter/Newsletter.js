@@ -14,7 +14,7 @@ class NewsletterSignUp extends Component {
               <div className="input-field col s12">
                 <span>
                   <button
-                    className="btn waves-effect waves-light prefix"
+                    className="btn waves-effect waves-light prefix thg-blue-bg"
                     type="submit"
                     name="action"
                   >

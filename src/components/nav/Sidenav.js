@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class Sidenav extends Component {
+  componentDidMount = () => {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = window.M.Sidenav.init(elems);
+  };
+
   render() {
     return (
       <ul id="slide-out" className="sidenav">
