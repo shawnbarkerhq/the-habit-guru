@@ -8,7 +8,6 @@ import Contact from '../ui/contact/Contact';
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
       <Slider />
       <NewsletterSignUp />
       <Learn />

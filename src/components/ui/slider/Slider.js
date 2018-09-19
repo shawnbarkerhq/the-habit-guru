@@ -1,13 +1,26 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import image1 from '../../../assets/images/architecture-art-bright.jpg';
+import image2 from '../../../assets/images/abstract-art-circles3.jpg';
+import image3 from '../../../assets/images/mechanism.jpg';
 class Slider extends Component {
+  componentDidMount = () => {
+    var slider = document.querySelectorAll('.slider');
+    var instanceSlider = window.M.Slider.init(slider, {
+      indicators: true,
+      height: 500,
+      transition: 600,
+      interval: 7500
+    });
+  };
+
   render() {
     return (
       <section id="slider" className="slider">
         <ul className="slides">
           <li>
-            <img src="https://via.placeholder.com/1920x1080" alt="" />
+            <img src={image1} alt="" />
             <div className="caption center-align">
               <h2>Let's Get Started</h2>
               <h5 className="light grey-text text-lighten-3 hide-on-small-only">
@@ -21,7 +34,7 @@ class Slider extends Component {
             </div>
           </li>
           <li>
-            <img src="https://via.placeholder.com/1920x1080" alt="" />
+            <img src={image2} alt="" />
             <div className="caption left-align">
               <h2>How can I help</h2>
               <h5 className="light grey-text text-lighten-3 hide-on-small-only">
@@ -35,7 +48,7 @@ class Slider extends Component {
             </div>
           </li>
           <li>
-            <img src="https://via.placeholder.com/1920x1080" alt="" />
+            <img src={image3} alt="" />
             <div className="caption right-align">
               <h2>Baby Steps</h2>
               <h5 className="light grey-text text-lighten-3 hide-on-small-only">
