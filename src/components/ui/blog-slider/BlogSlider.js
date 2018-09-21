@@ -7,8 +7,6 @@ import PropTypes from 'prop-types';
 import Spinner from '../../layout/Spinner';
 
 import slider1 from '../../../assets/images/adventure-asphalt-california.jpg';
-import slider2 from '../../../assets/images/abstract-art-circles3.jpg';
-import slider3 from '../../../assets/images/fog-foggy-jetty2.jpg';
 
 class BlogSlider extends Component {
   componentDidMount = () => {
@@ -19,6 +17,7 @@ class BlogSlider extends Component {
       transition: 600,
       interval: 10000
     });
+    return instanceSliderBlog;
   };
 
   render() {

@@ -13,11 +13,13 @@ class EmailList extends Component {
         <div className="container">
           <table className="striped centered responsive-table">
             <thead>
-              <th>Email</th>
+              <tr>
+                <th>Email</th>
+              </tr>
             </thead>
             <tbody>
               {emails.map(email => (
-                <tr>
+                <tr key={email.id}>
                   <td>{email.email}</td>
                 </tr>
               ))}

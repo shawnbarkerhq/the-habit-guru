@@ -5,6 +5,7 @@ class Sidenav extends Component {
   componentDidMount = () => {
     var elems = document.querySelectorAll('.sidenav');
     var instances = window.M.Sidenav.init(elems);
+    return instances;
   };
 
   render() {

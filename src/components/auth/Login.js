@@ -5,7 +5,6 @@ import { firebaseConnect } from 'react-redux-firebase';
 import PropTypes from 'prop-types';
 import Alert from '../layout/Alert';
 import { notifyUser } from '../../store/actions/notifyActions';
-import Spinner from '../layout/Spinner';
 
 class Login extends Component {
   state = {
@@ -82,7 +81,6 @@ class Login extends Component {
                     id="submit"
                     value="Submit"
                   />
-                  <a href="#">This is a link</a>
                 </div>
               </form>
             </div>

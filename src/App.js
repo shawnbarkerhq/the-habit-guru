@@ -40,11 +40,7 @@ class App extends Component {
                 exact
                 component={UserIsAuthenticated(Dashboard)}
               />
-              <Route
-                path="/posts"
-                exact
-                component={UserIsNotAuthenticated(Posts)}
-              />
+              <Route path="/posts" exact component={Posts} />
               <Route
                 path="/posts/add"
                 exact

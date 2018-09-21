@@ -8,6 +8,7 @@ class Dashboard extends Component {
   componentDidMount = () => {
     var el = document.querySelectorAll('.tabs');
     var instance = window.M.Tabs.init(el);
+    return instance;
   };
 
   render() {

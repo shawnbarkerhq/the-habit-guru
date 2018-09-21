@@ -12,18 +12,18 @@ class ContactList extends Component {
       return (
         <div className="container ">
           {contacts.map(contact => (
-            <div class="row">
-              <div class="col s12 m6 offset-m3">
-                <div class="card thg-blue-bg">
-                  <div class="card-content white-text">
-                    <span class="card-title">{contact.name}</span>
+            <div className="row" key={contact.id}>
+              <div className="col s12 m6 offset-m3">
+                <div className="card thg-blue-bg">
+                  <div className="card-content white-text">
+                    <span className="card-title">{contact.name}</span>
                     <p>{contact.email}</p>
                     <p>{contact.phone}</p>
                     <p>{contact.message}</p>
                   </div>
-                  <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
+                  <div className="card-action">
+                    {/* <a href="#">This is a link</a>
+                    <a href="#">This is a link</a> */}
                   </div>
                 </div>
               </div>

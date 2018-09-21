@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import image1 from '../../../assets/images/architecture-art-bright.jpg';
 import image2 from '../../../assets/images/abstract-art-circles3.jpg';
-import image3 from '../../../assets/images/mechanism.jpg';
+import image3 from '../../../assets/images/fog-foggy-jetty2.jpg';
 class Slider extends Component {
   componentDidMount = () => {
     var slider = document.querySelectorAll('.slider');
@@ -13,6 +13,7 @@ class Slider extends Component {
       transition: 600,
       interval: 7500
     });
+    return instanceSlider;
   };
 
   render() {
