@@ -91,11 +91,11 @@ class Navbar extends Component {
               <div className="nav-wrapper">
                 <li>
                   <NavLink
-                    to="/quotes"
+                    to="/dashboard"
                     className="thg-blue"
                     activeClassName="active"
                   >
-                    Quotes
+                    Dashboard
                   </NavLink>
                 </li>
                 <li>
@@ -109,7 +109,7 @@ class Navbar extends Component {
                 </li>
                 <li>
                   <NavLink
-                    to="/dashboard"
+                    to="/"
                     className="thg-blue"
                     activeClassName="active"
                     onClick={this.onLogoutClick}

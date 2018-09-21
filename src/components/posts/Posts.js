@@ -14,7 +14,7 @@ class Posts extends Component {
       return (
         <div>
           <div className="fixed-action-btn">
-            <Link to="/posts/add" class="btn-floating btn-large red">
+            <Link to="/posts/add" className="btn-floating btn-large red">
               <i className="fas fa-plus-circle" />
             </Link>
           </div>

@@ -13,7 +13,7 @@ class Quotes extends Component {
       return (
         <div className="quote">
           {quotes.map(quote => (
-            <blockquote key={quote.id}>{quote.quote}</blockquote>
+            <blockquote key={quote.id}>"{quote.quote}"</blockquote>
           ))}
         </div>
       );

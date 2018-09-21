@@ -25,13 +25,6 @@ class QuoteList extends Component {
               <i className="fas fa-plus-circle" />
             </Link>
           </div>
-          <div className="col s6">
-            <Link to="/" className="waves-effect waves-light btn">
-              <i className="fas fa-arrow-circle-left left" />
-              Back to home
-            </Link>
-          </div>
-
           <div className="container">
             {quotes.map(quote => (
               <div className="row" key={quote.id}>

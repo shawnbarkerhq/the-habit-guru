@@ -7,12 +7,12 @@ import { reduxFirestore, firestoreReducer } from 'redux-firestore';
 import notifyReducer from './reducers/notifyReducer';
 
 var firebaseConfig = {
-  apiKey: 'AIzaSyCt_Y-83W77-XCd3FY2X_onCNRJlA8ELMQ',
-  authDomain: 'blog-iq.firebaseapp.com',
-  databaseURL: 'https://blog-iq.firebaseio.com',
-  projectId: 'blog-iq',
-  storageBucket: 'blog-iq.appspot.com',
-  messagingSenderId: '277775178528'
+  apiKey: 'AIzaSyCpYEYPyaxD_o6SeNem1zsQ91H2tW13KUA',
+  authDomain: 'the-habit-guru.firebaseapp.com',
+  databaseURL: 'https://the-habit-guru.firebaseio.com',
+  projectId: 'the-habit-guru',
+  storageBucket: 'the-habit-guru.appspot.com',
+  messagingSenderId: '1028231518882'
 };
 
 // react-redux-firebase config
