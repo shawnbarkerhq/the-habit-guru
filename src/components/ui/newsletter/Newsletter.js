@@ -50,7 +50,7 @@ class NewsletterSignUp extends Component {
               </div>
               <input
                 type="submit"
-                className="waves-effect waves-light btn thg-blue-bg"
+                className="waves-effect waves-light btn thg-blue-bg white-text"
                 name="submit"
                 id="submit"
                 value="Submit"

@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import PropTypes from 'prop-types';
 import Spinner from '../layout/Spinner';
+import SocialNav from '../nav/SocialNav';
 
 class PostDetail extends Component {
   onDeleteClick = e => {
@@ -49,60 +50,9 @@ class PostDetail extends Component {
             <div className="container row blog-container">
               <p>August 20th, 2018</p>
               <h3>{post.title}</h3>
-              <h5>The habits of the unemployable</h5>
+              <h5>{post.subtitle}</h5>
               <p>Comments</p>
-              <div className="row">
-                <div className="card-action social">
-                  <Link
-                    to="https://facebook.com/thehabitguru"
-                    target="_blank"
-                    className="thg-blue"
-                    rel="noreferrer noopener"
-                  >
-                    <i className="fab fa-facebook fa-2x" />
-                  </Link>
-                  <Link
-                    to="https://twitter.com/thehabitguru"
-                    target="_blank"
-                    className="thg-blue"
-                    rel="noreferrer noopener"
-                  >
-                    <i className="fab fa-twitter fa-2x" />
-                  </Link>
-                  <Link
-                    to="https://linkedin.com/thehabitguru"
-                    target="_blank"
-                    className="thg-blue"
-                    rel="noreferrer noopener"
-                  >
-                    <i className="fab fa-linkedin fa-2x" />
-                  </Link>
-                  <Link
-                    to="https://instagram.com/thehabitguru"
-                    target="_blank"
-                    className="thg-blue"
-                    rel="noreferrer noopener"
-                  >
-                    <i className="fab fa-instagram fa-2x" />
-                  </Link>
-                  <Link
-                    to="https://pinterest.com/thehabitguru"
-                    target="_blank"
-                    className="thg-blue"
-                    rel="noreferrer noopener"
-                  >
-                    <i className="fab fa-pinterest-square fa-2x" />
-                  </Link>
-                  <Link
-                    to="https://youtube.com/thehabitguru"
-                    target="_blank"
-                    className="thg-blue"
-                    rel="noreferrer noopener"
-                  >
-                    <i className="fab fa-youtube fa-2x" />
-                  </Link>
-                </div>
-              </div>
+              <SocialNav />
               <div className="row">
                 <div className="">
                   <p>
@@ -112,16 +62,48 @@ class PostDetail extends Component {
                 <div className="categories">
                   <span
                     className="new badge thg-red-bg"
-                    data-badge-caption="Habits"
+                    data-badge-caption="Music"
                   />
                   <span
                     className="new badge thg-red-bg"
-                    data-badge-caption="Music"
+                    data-badge-caption="Habits"
                   />
                 </div>
               </div>
               <div className="row">
-                <p>{post.text}</p>
+                <h4>{post.heading1}</h4>
+                <p>{post.content1}</p>
+                <blockquote>{post.quote1}</blockquote>
+              </div>
+              <div className="row">
+                <h4>{post.heading2}</h4>
+                <p>{post.content2}</p>
+              </div>
+              <div className="row">
+                <h4>{post.heading3}</h4>
+                <p>{post.content3}</p>
+              </div>
+              <div className="row">
+                <h4>{post.heading4}</h4>
+                <p>{post.content4}</p>
+                <blockquote>{post.quote2}</blockquote>
+              </div>
+              <div className="row">
+                <h4>{post.heading5}</h4>
+                <p>{post.content5}</p>
+              </div>
+              <div className="row">
+                <h4>{post.heading6}</h4>
+                <p>{post.content6}</p>
+              </div>
+              <div className="row">
+                <h4>{post.heading7}</h4>
+                <p>{post.content7}</p>
+              </div>
+              <div className="row">
+                <h4>{post.heading8}</h4>
+                <p>{post.content8}</p>
+                <blockquote>{post.quote3}</blockquote>
               </div>
               <h5>Conclusion</h5>
               <p>
@@ -135,63 +117,13 @@ class PostDetail extends Component {
               <hr className="thg-red" />
               <p>
                 If you have more questions in regards to habits and would like
-                to understand more about habits and self improvement go to
-                www.TheHabitGuru.US. Don’t forget to subscribe to this blog so
-                you can stay up-to-date on the latest habit methods,
-                disciplines, processes, and routines for a better you.
+                to understand more about habits and self improvement go to{' '}
+                <Link to="https://thehabitguru.com">www.TheHabitGuru.com</Link>.
+                Don’t forget to subscribe to this blog so you can stay
+                up-to-date on the latest habit methods, disciplines, processes,
+                and routines for a better you.
               </p>
-              <div className="row">
-                <div className="card-action social">
-                  <Link
-                    to="https://facebook.com/thehabitguru"
-                    target="_blank"
-                    className="thg-blue"
-                    rel="noreferrer noopener"
-                  >
-                    <i className="fab fa-facebook fa-2x" />
-                  </Link>
-                  <Link
-                    to="https://twitter.com/thehabitguru"
-                    target="_blank"
-                    className="thg-blue"
-                    rel="noreferrer noopener"
-                  >
-                    <i className="fab fa-twitter fa-2x" />
-                  </Link>
-                  <Link
-                    to="https://linkedin.com/thehabitguru"
-                    target="_blank"
-                    className="thg-blue"
-                    rel="noreferrer noopener"
-                  >
-                    <i className="fab fa-linkedin fa-2x" />
-                  </Link>
-                  <Link
-                    to="https://instagram.com/thehabitguru"
-                    target="_blank"
-                    className="thg-blue"
-                    rel="noreferrer noopener"
-                  >
-                    <i className="fab fa-instagram fa-2x" />
-                  </Link>
-                  <Link
-                    to="https://pinterest.com/thehabitguru"
-                    target="_blank"
-                    className="thg-blue"
-                    rel="noreferrer noopener"
-                  >
-                    <i className="fab fa-pinterest-square fa-2x" />
-                  </Link>
-                  <Link
-                    to="https://youtube.com/thehabitguru"
-                    target="_blank"
-                    className="thg-blue"
-                    rel="noreferrer noopener"
-                  >
-                    <i className="fab fa-youtube fa-2x" />
-                  </Link>
-                </div>
-              </div>
+              <SocialNav />
               <div>
                 <p>Digital Signature</p>
               </div>

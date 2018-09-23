@@ -6,6 +6,7 @@ import {
 } from './components/utils/auth';
 import { Provider } from 'react-redux';
 import store from './store/store';
+import ReactGA from 'react-ga';
 
 import './App.css';
 
@@ -13,6 +14,7 @@ import Navbar from './components/nav/Navbar';
 import Sidenav from './components/nav/Sidenav';
 import Home from './components/layout/Home';
 import About from './components/layout/About';
+import Gallery from './components/ui/gallery/Gallery';
 import Dashboard from './components/layout/Dashboard';
 import Posts from './components/posts/Posts';
 import AddPost from './components/posts/AddPost';
@@ -24,6 +26,8 @@ import QuoteList from './components/ui/quote/QuoteList';
 import Login from './components/auth/Login';
 import Footer from './components/layout/Footer';
 
+ReactGA.initialize('UA-126230666-1');
+ReactGA.pageview('/about');
 class App extends Component {
   render() {
     return (
@@ -35,6 +39,7 @@ class App extends Component {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/about" exact component={About} />
+              <Route path="/gallery" exact component={Gallery} />
               <Route
                 path="/dashboard"
                 exact

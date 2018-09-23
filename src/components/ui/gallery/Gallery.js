@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
 
-import Pic1 from '../img/action-adventure-climbing.jpg';
-import Pic2 from '../img/Adult-arms-in-air-ocean-backgrouond.jpg';
-import Pic3 from '../img/Square-red-face-unhappy.jpg';
-import Pic4 from '../img/adventure-asphalt-california.jpg';
-import Pic5 from '../img/agenda-calendar-checklist.jpg';
-import Pic6 from '../img/ancient-art-buddha.jpg';
-import Pic7 from '../img/animal-animal-photography-blurred-background.jpg';
-import Pic8 from '../img/architecture-beautiful-church.jpg';
-import Pic9 from '../img/birds-clouds-colorful.jpg';
-import Pic10 from '../img/black-and-white-black-and-white-handwriting.jpg';
-import Pic11 from '../img/book-book-bindings-close-up.jpg';
-import Pic12 from '../img/circle-clean-clear.jpg';
+import Pic1 from '../../../assets/images/action-adventure-climbing.jpg';
+import Pic2 from '../../../assets/images/Adult-arms-in-air-ocean-backgrouond.jpg';
+import Pic3 from '../../../assets/images/Square-red-face-unhappy.jpg';
+import Pic4 from '../../../assets/images/adventure-asphalt-california.jpg';
+import Pic5 from '../../../assets/images/agenda-calendar-checklist.jpg';
+import Pic6 from '../../../assets/images/ancient-art-buddha.jpg';
+import Pic7 from '../../../assets/images/animal-animal-photography-blurred-background.jpg';
+import Pic8 from '../../../assets/images/architecture-beautiful-church.jpg';
+import Pic9 from '../../../assets/images/birds-clouds-colorful.jpg';
+import Pic10 from '../../../assets/images/black-and-white-black-and-white-handwriting.jpg';
+import Pic11 from '../../../assets/images/book-book-bindings-close-up.jpg';
+import Pic12 from '../../../assets/images/circle-clean-clear.jpg';
 
 class Gallery extends Component {
+  componentDidMount = () => {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = window.M.Materialbox.init(elems);
+    return instances;
+  };
+
   render() {
     return (
       <section id="gallery" className="section section-gallery scrollspy">
