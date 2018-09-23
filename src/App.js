@@ -27,7 +27,11 @@ import Login from './components/auth/Login';
 import Footer from './components/layout/Footer';
 
 ReactGA.initialize('UA-126230666-1');
+ReactGA.pageview('/');
 ReactGA.pageview('/about');
+ReactGA.pageview('/posts');
+ReactGA.pageview('/gallery');
+
 class App extends Component {
   render() {
     return (

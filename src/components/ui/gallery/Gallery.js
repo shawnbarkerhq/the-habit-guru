@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 
 import Pic1 from '../../../assets/images/action-adventure-climbing.jpg';
 import Pic2 from '../../../assets/images/Adult-arms-in-air-ocean-backgrouond.jpg';
@@ -23,6 +24,9 @@ class Gallery extends Component {
   render() {
     return (
       <section id="gallery" className="section section-gallery scrollspy">
+        <Helmet>
+          <title>The Habit Guru Gallery</title>
+        </Helmet>
         <div className="container">
           <h4 className="center">
             <span className="thg-red">Photo</span>

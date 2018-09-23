@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
@@ -13,6 +14,9 @@ class Posts extends Component {
     if (posts) {
       return (
         <div>
+          <Helmet>
+            <title>The Habit Guru Blog Posts</title>
+          </Helmet>
           <div className="fixed-action-btn">
             <Link to="/posts/add" className="btn-floating btn-large red">
               <i className="fas fa-plus-circle" />

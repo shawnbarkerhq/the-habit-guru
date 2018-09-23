@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Helmet } from 'react-helmet';
 import Posts from '../posts/Posts';
 import QuoteList from '../ui/quote/QuoteList';
 import EmailList from '../ui/newsletter/EmailList';
@@ -14,6 +14,9 @@ class Dashboard extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <title>The Habit Guru Dashboard</title>
+        </Helmet>
         <h1>Dashboard</h1>
         <div className="row">
           <div className="col s12">
