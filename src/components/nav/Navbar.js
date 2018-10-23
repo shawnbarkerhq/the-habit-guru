@@ -18,14 +18,12 @@ class Navbar extends Component {
       return { isAuthenticated: false };
     }
   }
-  onClickScroll = e => {
-    document.getElementById('contact').scrollIntoView();
-  };
+
   onLogoutClick = e => {
     e.preventDefault();
 
-    const { firebase } = this.props;
-    firebase.logout();
+    const { history, firebase } = this.props;
+    firebase.logout().then(() => history.push('/'));
   };
   render() {
     const { isAuthenticated } = this.state;
@@ -79,10 +77,9 @@ class Navbar extends Component {
             </li>
             <li>
               <NavLink
-                to="/"
+                to="/contact"
                 className="thg-blue"
                 activeClassName="active"
-                onClick={this.onClickScroll}
               >
                 Contact
               </NavLink>

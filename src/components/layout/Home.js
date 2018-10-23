@@ -4,8 +4,7 @@ import Slider from '../ui/slider/Slider';
 import NewsletterSignUp from '../ui/newsletter/Newsletter';
 import Quote from '../ui/quote/Quote';
 import Learn from '../ui/learn/Learn';
-import BlogSlider from '../ui/blog-slider/BlogSlider';
-import Contact from '../ui/contact/Contact';
+import BlogList from '../ui/blog-slider/BlogList';
 
 const Home = () => {
   return (
@@ -14,8 +13,7 @@ const Home = () => {
       <NewsletterSignUp />
       <Quote />
       <Learn />
-      <BlogSlider />
-      <Contact />
+      <BlogList />
     </div>
   );
 };

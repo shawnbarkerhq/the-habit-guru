@@ -10,11 +10,19 @@ class Quotes extends Component {
     const { quotes } = this.props;
     if (quotes) {
       return (
-        <div className="quote">
-          {quotes.map(quote => (
-            <blockquote key={quote.id}>"{quote.quote}"</blockquote>
-          ))}
-        </div>
+        <section>
+          <div id="slider-quote" className="slider-quote">
+            <ul className="slides">
+              {quotes.map(quote => (
+                <li key={quote.id}>
+                  <div className="caption center-align">
+                    <h3 className="thg-blue">{quote.quote}</h3>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
       );
     } else {
       return <Spinner />;

@@ -27,8 +27,8 @@ class QuoteList extends Component {
           </div>
           <div className="container">
             {quotes.map(quote => (
-              <div className="row" key={quote.id}>
-                <div className="col s6 ">
+              <div className="row">
+                <div className="col s6  key={quote.id}">
                   <blockquote>{quote.quote}</blockquote>
                 </div>
                 <div className="col s6">

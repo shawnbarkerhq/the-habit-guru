@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import image from '../../assets/images/architecture-art-bright.jpg';
+import me from '../../assets/images/prayer-pose.png';
+
 class Sidenav extends Component {
   componentDidMount = () => {
     var elems = document.querySelectorAll('.sidenav');
@@ -14,42 +17,36 @@ class Sidenav extends Component {
         <li>
           <div className="user-view">
             <div className="background">
-              <img
-                src="https://via.placeholder.com/350x150"
-                alt="sky around back"
-              />
+              <img src={image} alt="sky around back" />
             </div>
             <Link to="/#home">
-              <img
-                src="https://via.placeholder.com/350x150"
-                className="circle"
-                alt="Joshua Tree Barker"
-              />
+              <img src={me} className="circle" alt="Joshua Tree Barker" />
             </Link>
-            <Link to="/#about">
+            <Link to="/about">
               <span className="name white-text">Joshua "Tree" Barker</span>
             </Link>
-            <Link to="/#contact">
+            <Link to="/contact">
               <span className="email white-text">thehabitguru@gmail.com</span>
             </Link>
           </div>
         </li>
         <li>
-          <Link to="/dashboard">
-            <i className="material-icons">dashboard</i> Dashboard
+          <Link to="/">
+            <i className="fas fa-tachometer-alt" />
+            Home
           </Link>
         </li>
         <li>
-          <Link to="/#about">About</Link>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/feed">Posts</Link>
+          <Link to="/posts">Posts</Link>
         </li>
         <li>
-          <Link to="/#gallery">Gallery</Link>
+          <Link to="/gallery">Gallery</Link>
         </li>
         <li>
-          <Link to="/#contact">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
           <div className="/divider" />

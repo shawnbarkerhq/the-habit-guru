@@ -26,11 +26,11 @@ class NewsletterSignUp extends Component {
     return (
       <section
         id="newsletter-signup"
-        className="section newsletter-signup black-text center scrollspy"
+        className="section newsletter-signup white-text center scrollspy thgblue"
       >
         <div className="container">
           <div className="row">
-            <h4 className="center thg-blue">Newsletter Signup</h4>
+            <h4 className="center white-text">Habits Direct to You</h4>
             <form onSubmit={this.onSubmit}>
               <div className="input-field col s12">
                 <span>
@@ -44,13 +44,13 @@ class NewsletterSignUp extends Component {
                     value={this.state.email}
                   />
                   <label htmlFor="email">
-                    <b>Sign up for our newsletter</b>
+                    <p>Sign up for our newsletter</p>
                   </label>
                 </span>
               </div>
               <input
                 type="submit"
-                className="waves-effect waves-light btn thg-blue-bg white-text"
+                className="waves-effect waves-light btn thg-red-bg"
                 name="submit"
                 id="submit"
                 value="Submit"

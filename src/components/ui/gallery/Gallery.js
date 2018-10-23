@@ -80,7 +80,7 @@ class Gallery extends Component {
             <div className="col s12 m3">
               <img
                 className="materialboxed responsive-img"
-                src={Pic7}
+                src={Pic4}
                 alt="run"
               />
             </div>
@@ -110,7 +110,7 @@ class Gallery extends Component {
             <div className="col s12 m3">
               <img
                 className="materialboxed responsive-img"
-                src={Pic11}
+                src={Pic1}
                 alt="lit"
               />
             </div>

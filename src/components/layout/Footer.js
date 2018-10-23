@@ -38,9 +38,17 @@ class Footer extends Component {
                   </Link>
                 </li>
                 <li>
-                  <a className="grey-text text-lighten-3" to="/contact">
+                  <Link className="grey-text text-lighten-3" to="/contact">
                     Contact
-                  </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="grey-text text-lighten-3"
+                    to="/how-can-i-help"
+                  >
+                    How Can I Help
+                  </Link>
                 </li>
               </ul>
             </div>

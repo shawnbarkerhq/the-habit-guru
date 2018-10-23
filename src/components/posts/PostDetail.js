@@ -118,7 +118,7 @@ class PostDetail extends Component {
               <p>
                 If you have more questions in regards to habits and would like
                 to understand more about habits and self improvement go to{' '}
-                <Link to="https://thehabitguru.com">www.TheHabitGuru.com</Link>.
+                <a href="https://thehabitguru.com">www.TheHabitGuru.com</a>.
                 Don’t forget to subscribe to this blog so you can stay
                 up-to-date on the latest habit methods, disciplines, processes,
                 and routines for a better you.

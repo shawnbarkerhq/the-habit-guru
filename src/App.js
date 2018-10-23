@@ -23,6 +23,8 @@ import PostDetail from './components/posts/PostDetail';
 import AddQuote from './components/ui/quote/AddQuote';
 import EditQuote from './components/ui/quote/EditQuote';
 import QuoteList from './components/ui/quote/QuoteList';
+import Contact from './components/ui/contact/Contact';
+import Help from './components/ui/help/Help';
 import Login from './components/auth/Login';
 import Footer from './components/layout/Footer';
 
@@ -44,6 +46,8 @@ class App extends Component {
               <Route path="/" exact component={Home} />
               <Route path="/about" exact component={About} />
               <Route path="/gallery" exact component={Gallery} />
+              <Route path="/contact" exact component={Contact} />
+              <Route path="/how-can-i-help" exact component={Help} />
               <Route
                 path="/dashboard"
                 exact

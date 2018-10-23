@@ -6,7 +6,7 @@ import image2 from '../../../assets/images/abstract-art-circles3.jpg';
 import image3 from '../../../assets/images/fog-foggy-jetty2.jpg';
 class Slider extends Component {
   componentDidMount = () => {
-    var slider = document.querySelectorAll('.slider');
+    var slider = document.querySelectorAll('#slider');
     var instanceSlider = window.M.Slider.init(slider, {
       indicators: true,
       height: 500,
@@ -29,7 +29,7 @@ class Slider extends Component {
                 provide awareness of how habits can create happiness or
                 distractions.
               </h5>
-              <Link to="#about" className="btn thg-blue-bg btn-large">
+              <Link to="/about" className="btn thg-blue-bg btn-large">
                 Learn More
               </Link>
             </div>
@@ -43,7 +43,7 @@ class Slider extends Component {
                 helping you identify small changes you can make to reach a
                 desired outcome.
               </h5>
-              <Link to="#services" className="btn thg-blue-bg btn-large">
+              <Link to="/how-can-i-help" className="btn thg-blue-bg btn-large">
                 Learn More
               </Link>
             </div>
@@ -51,13 +51,13 @@ class Slider extends Component {
           <li>
             <img src={image3} alt="" />
             <div className="caption right-align">
-              <h2>Baby Steps</h2>
+              <h2>Awareness</h2>
               <h5 className="light grey-text text-lighten-3 hide-on-small-only">
-                As I learn, grow, and become more aware of my own self I will
-                also be documenting my changes to my habit loops to increase or
-                descrease the desired effect.
+                Challenge yourself today and take your life back into your own
+                hands start become more aware of your own habits by understand
+                others process, principles, routines, and habits.
               </h5>
-              <Link to="#posts" className="btn thg-blue-bg btn-large">
+              <Link to="/posts" className="btn thg-blue-bg btn-large">
                 Learn More
               </Link>
             </div>

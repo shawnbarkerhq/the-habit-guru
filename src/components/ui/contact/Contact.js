@@ -36,7 +36,7 @@ class Contact extends Component {
       >
         <div className="container">
           <div className="row">
-            <div className="col s12 m6 offset-m6">
+            <div className="col s12 m6 offset-m3">
               <div className="card-panel z-depth-5">
                 <h4>
                   <span className="thg-red">Contact</span>

@@ -58,6 +58,15 @@ nav.navbar-center ul li a:active {
   height: 400px;
 }
 
+.slider-quote .slides {
+  background-color: white;
+}
+
+.slider-quote .slides li h3 {
+  z-index: 1000;
+  color: black;
+}
+
 .thg-title-font {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
@@ -105,6 +114,10 @@ nav.navbar-center ul li a:active {
   background: #36475e;
 }
 
+.thgblue {
+  background: #36475e;
+}
+
 .thg-blue-bg:hover {
   background: #5a6c7f;
 }
@@ -139,6 +152,10 @@ nav.navbar-center ul li a:active {
 
 .about-quote {
   font-size: 2rem;
+}
+
+.bslide {
+  overflow: hidden;
 }
 
 .section-developers {
@@ -179,6 +196,7 @@ nav.navbar-center ul li a:active {
 
 .section-contact {
   position: relative;
+  height: 75vh;
   background-image: linear-gradient(to bottom, rgba(87, 87, 87, 0.8), rgba(20, 20, 20, .8)), url(./assets/images/resort1.jpg);
   background-size: cover;
   background-position: center;
@@ -223,6 +241,9 @@ nav.navbar-center ul li a:active {
 }
 
 /****************** Blog section ******************/
+.newsletter {
+  background-color: white !important;
+}
 
 blockquote {
   border-left: none;
@@ -230,6 +251,21 @@ blockquote {
   font-weight: bold;
   color: black;
   font-size: 4rem;
+}
+
+.img-holder>img {
+  height: 8rem;
+  margin-bottom: 4rem;
+}
+
+.help-form {
+  padding: 2rem;
+}
+
+.section-help .help-form .help-input {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* padding: 2rem; */
 }
 
 .quote {
@@ -297,12 +333,4 @@ hr {
 
 .bold {
   font-weight: bold;
-}
-
-@media (max-width: 500px) {
-
-  .section-developers,
-  .section-podcast {
-    min-height: 240px;
-  }
 }
